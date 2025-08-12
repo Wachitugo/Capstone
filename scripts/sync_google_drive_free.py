@@ -35,7 +35,7 @@ class GoogleDriveSyncFree:
         self.refresh_token_path = refresh_token_path
         self.folder_id = folder_id
         self.service = self._authenticate()
-        self.sync_folder = Path("google-drive-sync")
+        self.sync_folder = Path("Archivos")
         self.sync_folder.mkdir(exist_ok=True)
         
         # Archivo para rastrear el estado de sincronización
