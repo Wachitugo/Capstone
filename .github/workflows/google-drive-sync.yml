@@ -51,7 +51,7 @@ jobs:
         git config --local user.name "GitHub Action (Free Sync)"
         
         # Solo agregar carpeta de sync y archivos de estado (sin credenciales)
-        git add google-drive-sync/ scripts/sync_state_free.json 2>/dev/null || true
+        git add Archivos/ scripts/sync_state_free.json 2>/dev/null || true
         
         if git diff --staged --quiet; then
           echo "No changes to commit"
