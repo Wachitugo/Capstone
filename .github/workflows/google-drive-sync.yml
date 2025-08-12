@@ -51,9 +51,9 @@ jobs:
         git config --local user.name "GitHub Action (Free Sync)"
         
         # Actualizar timestamp en README
-        TIMESTAMP=$(TZ='America/Santiago' date '+%Y-%m-%d %H:%M')
+        TIMESTAMP=$(TZ='America/Santiago' date '+%d-%m-%Y %H:%M')
         
-        sed -i "s/\(Última sincronización:\s*\).*/\1$TIMESTAMP**/" README.md
+        sed -i "s/\(Última sincronización: \s*\).*/\1$TIMESTAMP**/" README.md
 
         # Solo agregar carpeta de sync, archivos de estado y README (sin credenciales)
         git add Archivos/ scripts/sync_state_free.json README.md 2>/dev/null || true
