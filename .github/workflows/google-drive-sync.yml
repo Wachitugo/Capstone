@@ -51,7 +51,7 @@ jobs:
         git config --local user.name "GitHub Action (Free Sync)"
         
         # Actualizar timestamp en README
-        TIMESTAMP=$(TZ='America/Santiago' date '+%Y-%m-%d %H:%M:%S')
+        TIMESTAMP=$(TZ='America/Santiago' date '+%Y-%m-%d %H:%M')
         
         sed -i "s/\(Última sincronización:\s*\).*/\1$TIMESTAMP/" README.md
 
