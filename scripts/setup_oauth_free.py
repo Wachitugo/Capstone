@@ -19,21 +19,36 @@ def setup_free_oauth():
     """
     print("🆓 CONFIGURACIÓN OAUTH2 GRATUITA")
     print("=" * 50)
-    print("Este método NO requiere Google Cloud Console")
-    print("y es completamente GRATUITO\n")
+    print("Primero necesitas crear tus credenciales OAuth2 gratuitas\n")
     
-    # Crear credenciales OAuth2 básicas
-    oauth_config = {
-        "installed": {
-            "client_id": "1036868456665-qh4n5d0ps1vr2d0kq2e7fdgjqhmfek4n.apps.googleusercontent.com",
-            "project_id": "quickstart-oauth2",
-            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-            "token_uri": "https://oauth2.googleapis.com/token",
-            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-            "client_secret": "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",
-            "redirect_uris": ["http://localhost:8080/"]
-        }
-    }
+    print("📋 PASOS PARA CREAR CREDENCIALES GRATUITAS:")
+    print("1. Ve a https://console.developers.google.com/")
+    print("2. Crea un nuevo proyecto (o usa uno existente)")
+    print("3. Habilita la Google Drive API")
+    print("4. Ve a 'Credentials' > 'Create Credentials' > 'OAuth client ID'")
+    print("5. Selecciona 'Desktop application'")
+    print("6. Descarga el archivo JSON\n")
+    
+    # Solicitar archivo de credenciales
+    while True:
+        creds_path = input("📁 Arrastra aquí tu archivo JSON de credenciales (o escribe la ruta): ").strip().strip('"')
+        
+        if not creds_path:
+            print("❌ Debes proporcionar la ruta del archivo")
+            continue
+            
+        if not os.path.exists(creds_path):
+            print(f"❌ Archivo no encontrado: {creds_path}")
+            continue
+            
+        try:
+            with open(creds_path, 'r') as f:
+                oauth_config = json.load(f)
+            print(f"✅ Credenciales cargadas correctamente")
+            break
+        except Exception as e:
+            print(f"❌ Error leyendo archivo: {e}")
+            continue
     
     print("📄 Creando archivo de credenciales OAuth2...")
     credentials_file = Path("oauth_credentials.json")
