@@ -44,9 +44,15 @@ jobs:
         
     - name: Commit and push changes
       run: |
+        # Limpiar credenciales ANTES de hacer commit
+        rm -f oauth_credentials.json refresh_token.txt
+        
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action (Free Sync)"
-        git add .
+        
+        # Solo agregar carpeta de sync y archivos de estado (sin credenciales)
+        git add google-drive-sync/ scripts/sync_state_free.json 2>/dev/null || true
+        
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
