@@ -50,13 +50,17 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action (Free Sync)"
         
-        # Solo agregar carpeta de sync y archivos de estado (sin credenciales)
-        git add Archivos/ scripts/sync_state_free.json 2>/dev/null || true
+        # Actualizar timestamp en README
+        TIMESTAMP=$(TZ='America/Santiago' date '+%Y-%m-%d %H:%M:%S')
+        sed -i "s/PLACEHOLDER_TIMESTAMP/$TIMESTAMP/" README.md
+        
+        # Solo agregar carpeta de sync, archivos de estado y README (sin credenciales)
+        git add Archivos/ scripts/sync_state_free.json README.md 2>/dev/null || true
         
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
-          git commit -m "Ultima actualización - $(date '+%Y-%m-%d %H:%M:%S')"
+          git commit -m "Ultima actualización - $TIMESTAMP"
           git push
         fi
         
