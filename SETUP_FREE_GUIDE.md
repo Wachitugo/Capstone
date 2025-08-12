@@ -46,17 +46,8 @@
 
 #### Secret 1: GOOGLE_OAUTH_CREDENTIALS
 ```json
-{
-  "installed": {
-    "client_id": "1036868456665-qh4n5d0ps1vr2d0kq2e7fdgjqhmfek4n.apps.googleusercontent.com",
-    "project_id": "quickstart-oauth2",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_secret": "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",
-    "redirect_uris": ["http://localhost:8080/"]
-  }
-}
+# Contenido de tu archivo JSON descargado de Google Developers Console
+# Ver SETUP_OAUTH_GUIDE.md para crear tus propias credenciales
 ```
 
 #### Secret 2: GOOGLE_REFRESH_TOKEN
