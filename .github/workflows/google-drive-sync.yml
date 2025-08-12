@@ -1,4 +1,4 @@
-name: Google Drive Sync (FREE)
+name: Google Drive Sync
 
 on:
   schedule:
