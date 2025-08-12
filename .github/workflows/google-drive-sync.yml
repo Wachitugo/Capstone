@@ -3,7 +3,7 @@ name: Google Drive Sync
 on:
   schedule:
     # Ejecutar cada 30 minutos
-    - cron: '*/30 * * * *'
+    - cron: '0 */12 * * *'
   workflow_dispatch: # Permitir ejecución manual
   push:
     branches: [main]
@@ -52,6 +52,7 @@ jobs:
         
         # Actualizar timestamp en README
         TIMESTAMP=$(TZ='America/Santiago' date '+%Y-%m-%d %H:%M:%S')
+        
         sed -i "s/PLACEHOLDER_TIMESTAMP/$TIMESTAMP/" README.md
         
         # Solo agregar carpeta de sync, archivos de estado y README (sin credenciales)
