@@ -17,6 +17,9 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload
 
+# Permitir HTTP para desarrollo local (solo para testing)
+os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
+
 
 class GoogleDriveSyncFree:
     def __init__(self, oauth_credentials_path: str, refresh_token_path: str, folder_id: str):
