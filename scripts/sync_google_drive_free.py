@@ -304,9 +304,6 @@ class GoogleDriveSyncFree:
         # Guardar estado de sincronización
         self._save_sync_state()
         
-        # Crear archivo de resumen
-        self._create_sync_summary(stats)
-        
         print(f"\n🎉 Sincronización GRATUITA completada:")
         print(f"   📁 Total de archivos: {stats['total_files']}")
         print(f"   ⬇️  Descargados: {stats['downloaded']}")
@@ -315,34 +312,6 @@ class GoogleDriveSyncFree:
         
         return stats
     
-    def _create_sync_summary(self, stats: Dict):
-        """Crear archivo de resumen de la sincronización"""
-        summary_file = self.sync_folder / "SYNC_SUMMARY_FREE.md"
-        
-        with open(summary_file, 'w', encoding='utf-8') as f:
-            f.write(f"# 🆓 Resumen de Sincronización GRATUITA\n\n")
-            f.write(f"**Fecha:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-            f.write(f"**Método:** OAuth2 (100% Gratuito)\n\n")
-            f.write(f"## 📊 Estadísticas\n\n")
-            f.write(f"- **Total de archivos:** {stats['total_files']}\n")
-            f.write(f"- **Descargados/Actualizados:** {stats['downloaded']}\n")
-            f.write(f"- **Sin cambios:** {stats['skipped']}\n")
-            f.write(f"- **Errores:** {stats['errors']}\n\n")
-            
-            if stats['updated_files']:
-                f.write(f"## 📥 Archivos Actualizados\n\n")
-                for file_path in stats['updated_files']:
-                    f.write(f"- `{file_path}`\n")
-                f.write("\n")
-            
-            f.write(f"## 💡 Ventajas del Método Gratuito\n\n")
-            f.write(f"- ✅ **Sin costos** de Google Cloud\n")
-            f.write(f"- ✅ **Fácil configuración** OAuth2\n")
-            f.write(f"- ✅ **Sin límites de facturación**\n")
-            f.write(f"- ✅ **Acceso completo** a Google Drive\n\n")
-            
-            f.write(f"---\n")
-            f.write(f"*Generado automáticamente por GitHub Actions (Método Gratuito)*\n")
 
 
 def main():
