@@ -8,6 +8,7 @@ Repositorio creado con el propósito de almacenar y gestionar todos los document
 
 * **Benjamín Ruiz**
 * **Cristian Mancilla**
+* **Matías Soto**
 
 ---
 
