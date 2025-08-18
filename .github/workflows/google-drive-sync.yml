@@ -3,7 +3,7 @@ name: Google Drive Sync
 on:
   schedule:
     # Ejecutar cada 30 minutos
-    - cron: '*/30 * * * *'
+    - cron: '0 */12 * * *'
   workflow_dispatch: # Permitir ejecución manual
   push:
     branches: [main]
@@ -51,8 +51,7 @@ jobs:
         git config --local user.name "GitHub Action (Free Sync)"
         
         # Actualizar timestamp en README
-        TIMESTAMP=$(TZ='America/Santiago' date '+%Y-%m-%d %H:%M:%S')
-        sed -i "s/PLACEHOLDER_TIMESTAMP/$TIMESTAMP/" README.md
+        TIMESTAMP=$(TZ='America/Santiago' date '+%d-%m-%Y %H:%M')
         
         # Solo agregar archivos sincronizados, archivos de estado y README (sin credenciales)
         git add . scripts/sync_state_free.json README.md 2>/dev/null || true

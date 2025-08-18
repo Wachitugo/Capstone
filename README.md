@@ -8,7 +8,8 @@ Repositorio creado con el propósito de almacenar y gestionar todos los document
 
 * **Benjamín Ruiz**
 * **Cristian Mancilla**
+* **Matías Soto**
 
 ---
 
-**Última sincronización:** PLACEHOLDER_TIMESTAMP
+**Última sincronización:               18-08-2025 09:19**
