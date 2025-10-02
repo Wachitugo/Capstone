@@ -3,9 +3,9 @@
     "10cGP5NSQPzfEO4dmM7Aw6NZ-jPhmwebC": {
       "name": "1.5_GuiaEstudiante_Fase 1_Definicion Proyecto APT.docx",
       "path": "Fase 1/Evidencias Grupales/1.5_GuiaEstudiante_Fase 1_Definicion Proyecto APT.docx",
-      "modified_time": "2025-08-31T01:56:32.198Z",
-      "md5_checksum": "e69e0c286b99981141b199d77891a744",
-      "size": 379389
+      "modified_time": "2025-10-01T19:25:57.210Z",
+      "md5_checksum": "3de08573c0b0e00ff924c3c82233244f",
+      "size": 378918
     },
     "185Fx99GVmqSoSdF2ikZQe2YWri6PnFV1": {
       "name": "Matias_Soto_1.1_APT122_AutoevaluacionCompetenciasFase1.docx",
@@ -83,7 +83,28 @@
       "modified_time": "2025-09-01T13:14:59.465Z",
       "md5_checksum": "63bba35bfa7e6019475166d07af2c9d7",
       "size": 7511530
+    },
+    "1VERTMKs3FblRWqpISZaKLojQDWnm2M2R": {
+      "name": "2.4_GuiaEstudiante_Fase 2_DesarrolloProyecto APT.docx",
+      "path": "Fase 2/Evidencias Grupales/2.4_GuiaEstudiante_Fase 2_DesarrolloProyecto APT.docx",
+      "modified_time": "2025-10-01T19:32:53.620Z",
+      "md5_checksum": "f2645aff241f0f3550b9132fc366ca2a",
+      "size": 369543
+    },
+    "100mTMeyM7Lm5rUxYbk3d68wGX3Ox5xNW": {
+      "name": "2.6_GuiaEstudiante_Fase 2_Informe Final Proyecto APT.docx",
+      "path": "Fase 2/Evidencias Grupales/2.6_GuiaEstudiante_Fase 2_Informe Final Proyecto APT.docx",
+      "modified_time": "2025-10-01T19:15:20.000Z",
+      "md5_checksum": "8b49e0711b561c1b9661db3b86879e87",
+      "size": 82060
+    },
+    "1nn5siBkLX4lrrZ39gnF8T1q9pe_tA13C": {
+      "name": "Mansilla_Cristian_2.1_APT122_DiarioReflexionFase2.docx",
+      "path": "Fase 2/Evidencias Individuales/Mansilla_Cristian_2.1_APT122_DiarioReflexionFase2.docx",
+      "modified_time": "2025-10-01T21:32:48.342Z",
+      "md5_checksum": "d5536fa0eda6ed07a6cf7c2fd0ce887b",
+      "size": 425217
     }
   },
-  "last_sync": "2025-10-01T12:53:56.965957"
+  "last_sync": "2025-10-02T01:52:08.626715"
 }
