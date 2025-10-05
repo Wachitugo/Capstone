@@ -87,16 +87,16 @@
     "1VERTMKs3FblRWqpISZaKLojQDWnm2M2R": {
       "name": "2.4_GuiaEstudiante_Fase 2_DesarrolloProyecto APT.docx",
       "path": "Fase 2/Evidencias Grupales/2.4_GuiaEstudiante_Fase 2_DesarrolloProyecto APT.docx",
-      "modified_time": "2025-10-01T19:32:53.620Z",
-      "md5_checksum": "f2645aff241f0f3550b9132fc366ca2a",
-      "size": 369543
+      "modified_time": "2025-10-05T05:38:34.249Z",
+      "md5_checksum": "05954fc024f84666cb6575969fe70aab",
+      "size": 471580
     },
     "100mTMeyM7Lm5rUxYbk3d68wGX3Ox5xNW": {
       "name": "2.6_GuiaEstudiante_Fase 2_Informe Final Proyecto APT.docx",
       "path": "Fase 2/Evidencias Grupales/2.6_GuiaEstudiante_Fase 2_Informe Final Proyecto APT.docx",
-      "modified_time": "2025-10-01T19:15:20.000Z",
-      "md5_checksum": "8b49e0711b561c1b9661db3b86879e87",
-      "size": 82060
+      "modified_time": "2025-10-05T05:52:33.475Z",
+      "md5_checksum": "ed8dc32fc5112e9080240f450d26ad68",
+      "size": 369427
     },
     "1nn5siBkLX4lrrZ39gnF8T1q9pe_tA13C": {
       "name": "Mansilla_Cristian_2.1_APT122_DiarioReflexionFase2.docx",
@@ -104,7 +104,14 @@
       "modified_time": "2025-10-01T21:32:48.342Z",
       "md5_checksum": "d5536fa0eda6ed07a6cf7c2fd0ce887b",
       "size": 425217
+    },
+    "1BQVc9jNEij0nXSVE4kGBL68GkHm9oRDO": {
+      "name": "Benjamin_Ruiz_2.1_APT122_DiarioReflexionFase2.docx",
+      "path": "Fase 2/Evidencias Individuales/Benjamin_Ruiz_2.1_APT122_DiarioReflexionFase2.docx",
+      "modified_time": "2025-10-05T05:20:04.334Z",
+      "md5_checksum": "29a873dfc48d3d8d240ab629330bfe93",
+      "size": 424864
     }
   },
-  "last_sync": "2025-10-05T02:02:28.924474"
+  "last_sync": "2025-10-05T05:53:50.466621"
 }
