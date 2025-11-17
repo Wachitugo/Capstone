@@ -122,9 +122,9 @@
     "1JLyjljq29K379xOxcV_4VhunA3pZPn1Y": {
       "name": "Informe Final - APT.docx",
       "path": "Fase 3/Informe Final - APT.docx",
-      "modified_time": "2025-11-17T01:37:17.310Z",
-      "md5_checksum": "d327f7bda7c8660cbeb4df93af85dc75",
-      "size": 42389
+      "modified_time": "2025-11-17T03:33:51.882Z",
+      "md5_checksum": "9a0da1ad4dc5822b4df84c4816be85c3",
+      "size": 42377
     },
     "1lzkE7wk6TqSVYSwmLzBRu7pD79GfkODu": {
       "name": "Presentación final.pptx",
@@ -132,7 +132,14 @@
       "modified_time": "2025-11-17T00:58:42.073Z",
       "md5_checksum": "3eb0fce3764e126a93208c5f700dabb8",
       "size": 106532
+    },
+    "19JOKYjtMJbi8Lmxl-lykrMJ8VrDD4rPp": {
+      "name": "Presentación final.pptx",
+      "path": "Fase 3/Presentación final.pptx",
+      "modified_time": "2025-11-17T04:23:29.207Z",
+      "md5_checksum": "e1648dcef6fa6deef3d931bb1db7b2c6",
+      "size": 2520281
     }
   },
-  "last_sync": "2025-11-17T02:03:56.644930"
+  "last_sync": "2025-11-17T04:26:09.861891"
 }
