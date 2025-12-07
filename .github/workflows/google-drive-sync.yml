@@ -3,7 +3,6 @@ name: Google Drive Sync
 on:
   schedule:
     # Ejecutar cada 30 minutos
-    - cron: '0 */12 * * *'
   workflow_dispatch: # Permitir ejecución manual
   push:
     branches: [main]
